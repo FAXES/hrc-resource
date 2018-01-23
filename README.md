@@ -1,4 +1,3 @@
-
 # About hrc
 HRC or otherwise called help, rules & commands script is a script that allowed a user to enter /help and it shows a image containing the information.
 
@@ -26,3 +25,5 @@ To remove the image simply press *E*
 
 
 For more information on this resource head over to the FiveM forums.
+
+Updates Soon!
