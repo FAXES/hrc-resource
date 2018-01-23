@@ -1,4 +1,5 @@
- # About hrc
+
+# About hrc
 HRC or otherwise called help, rules & commands script is a script that allowed a user to enter /help and it shows a image containing the information.
 
 The scxript is based off Simple Disclaimer and has been heavily modified to the new resource.
@@ -14,9 +15,13 @@ To remove the image simply press *E*
 
 # Credits
 @FAXES: Main editor and publisher
+
 @Vespura: Making me think straight
+
 @Briglair: For the javascript remake
+
 @Dante_Kane: Original script (Simple Disclaimer)
+
 @Kvetz: For some more help
 
 
