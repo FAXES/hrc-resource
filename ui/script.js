@@ -3,6 +3,7 @@ $(function(){
 		window.addEventListener('message', function(event){
 
 			var item = event.data;
+			/* ----HELP SECTION---- */
 			if (item !== undefined && item.type === "disclaimer") {
 
 				if (item.display === true) {
@@ -11,7 +12,7 @@ $(function(){
 					$('#disclaimer').fadeOut( "slow" );
 				}
 			}
-
+			/* ----RULES SECTION---- */
 			if (item !== undefined && item.type === "rules") {
 
 				if (item.display === true) {
@@ -20,13 +21,22 @@ $(function(){
 					$('#rules').fadeOut( "slow" );
 				}
 			}
-			
+			/* ----COMMANDS SECTION---- */
 			if (item !== undefined && item.type === "cmds") {
 
 				if (item.display === true) {
 					$('#cmds').delay(100).fadeIn( "slow" );
 				} else if (item.display === false) {
 					$('#cmds').fadeOut( "slow" );
+				}
+			}
+			/* ----INFO SECTION---- */
+			if (item !== undefined && item.type === "info") {
+
+				if (item.display === true) {
+					$('#info').delay(100).fadeIn( "slow" );
+				} else if (item.display === false) {
+					$('#info').fadeOut( "slow" );
 				}
 			}
 		});
