@@ -114,3 +114,42 @@ function ShowInfo(text, state)
   AddTextComponentString(text)
   DisplayHelpTextFromStringLabel(0, state, 0, -1)
 end
+
+------------------------INFO SECTION--------------------------------------------
+
+RegisterCommand('sinfo', function()
+  Citizen.CreateThread(function()
+    local display = true
+    local startTime = GetGameTimer()
+    local delay = 70000 -- ms
+
+    TriggerEvent('info:display', true)
+
+    while display do
+      Citizen.Wait(1)
+      --ShowInfo('~y~Attention.~w~ Press ~INPUT_CONTEXT~ to exit.', 0)
+      if (GetTimeDifference(GetGameTimer(), startTime) > delay) then
+        display = false
+        TriggerEvent('info:display', false)
+      end
+      if (IsControlJustPressed(1, 51)) then
+        display = false
+        TriggerEvent('info:display', false)
+      end
+    end
+  end)
+end)
+
+RegisterNetEvent('info:display')
+AddEventHandler('info:display', function(value)
+  SendNUIMessage({
+    type = "info",
+    display = value
+  })
+end)
+
+function ShowInfo(text, state)
+  SetTextComponentFormat("STRING")
+  AddTextComponentString(text)
+  DisplayHelpTextFromStringLabel(0, state, 0, -1)
+end

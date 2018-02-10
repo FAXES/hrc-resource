@@ -5,8 +5,9 @@ files {
   'ui/index.html',
   'ui/style.css',
   'ui/img/bg-img.png',
-  'ui/img/bg-img1.png',
   'ui/img/bg-img2.png',
+  'ui/img/bg-img3.png',
+  'ui/img/bg-img4.png',
   'ui/script.js'
 }
 
