@@ -6,27 +6,27 @@ RegisterCommand('help', function()
     local startTime = GetGameTimer()
     local delay = 70000 -- ms
 
-    TriggerEvent('disclaimer:display', true)
+    TriggerEvent('help:display', true)
 
     while display do
       Citizen.Wait(1)
       --ShowInfo('~y~Attention.~w~ Press ~INPUT_CONTEXT~ to exit.', 0)
       if (GetTimeDifference(GetGameTimer(), startTime) > delay) then
         display = false
-        TriggerEvent('disclaimer:display', false)
+        TriggerEvent('help:display', false)
       end
       if (IsControlJustPressed(1, 51)) then
         display = false
-        TriggerEvent('disclaimer:display', false)
+        TriggerEvent('help:display', false)
       end
     end
   end)
 end)
 
-RegisterNetEvent('disclaimer:display')
-AddEventHandler('disclaimer:display', function(value)
+RegisterNetEvent('help:display')
+AddEventHandler('help:display', function(value)
   SendNUIMessage({
-    type = "disclaimer",
+    type = "help",
     display = value
   })
 end)
