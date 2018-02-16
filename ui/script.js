@@ -4,12 +4,12 @@ $(function(){
 
 			var item = event.data;
 			/* ----HELP SECTION---- */
-			if (item !== undefined && item.type === "disclaimer") {
+			if (item !== undefined && item.type === "help") {
 
 				if (item.display === true) {
-					$('#disclaimer').delay(100).fadeIn( "slow" );
+					$('#help').delay(100).fadeIn( "slow" );
 				} else if (item.display === false) {
-					$('#disclaimer').fadeOut( "slow" );
+					$('#help').fadeOut( "slow" );
 				}
 			}
 			/* ----RULES SECTION---- */
