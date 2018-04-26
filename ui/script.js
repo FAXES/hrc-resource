@@ -1,3 +1,4 @@
+var audio = new Audio('action.ogg');
 $(function(){
 	window.onload = function(e){
 		window.addEventListener('message', function(event){
@@ -7,7 +8,8 @@ $(function(){
 			if (item !== undefined && item.type === "help") {
 
 				if (item.display === true) {
-					$('#help').delay(100).fadeIn( "slow" );
+					$('#help').delay(100).fadeIn( 0 );
+					audio.play();
 				} else if (item.display === false) {
 					$('#help').fadeOut( "slow" );
 				}
@@ -16,7 +18,8 @@ $(function(){
 			if (item !== undefined && item.type === "rules") {
 
 				if (item.display === true) {
-					$('#rules').delay(100).fadeIn( "slow" );
+					$('#rules').delay(100).fadeIn( 0 );
+					audio.play();
 				} else if (item.display === false) {
 					$('#rules').fadeOut( "slow" );
 				}
@@ -25,7 +28,8 @@ $(function(){
 			if (item !== undefined && item.type === "cmds") {
 
 				if (item.display === true) {
-					$('#cmds').delay(100).fadeIn( "slow" );
+					$('#cmds').delay(100).fadeIn( 0 );
+					audio.play();
 				} else if (item.display === false) {
 					$('#cmds').fadeOut( "slow" );
 				}
@@ -34,7 +38,8 @@ $(function(){
 			if (item !== undefined && item.type === "info") {
 
 				if (item.display === true) {
-					$('#info').delay(100).fadeIn( "slow" );
+					$('#info').delay(100).fadeIn( 0 );
+					audio.play();
 				} else if (item.display === false) {
 					$('#info').fadeOut( "slow" );
 				}

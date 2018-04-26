@@ -8,6 +8,7 @@ files {
   'ui/img/bg-img2.png',
   'ui/img/bg-img3.png',
   'ui/img/bg-img4.png',
+  'ui/action.ogg',
   'ui/script.js'
 }
 
