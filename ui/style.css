@@ -70,7 +70,7 @@
 	top:50%;										
 	margin:-350px 0 0 -500px;    					
 	text-align: center;
-	background: url('img/bg-img.png');				
+	background: url('img/help.png');				
 	padding: none; 									
     
 }
@@ -185,7 +185,7 @@
 	top:50%;										
 	margin:-350px 0 0 -500px;    					
 	text-align: center;
-	background: url('img/bg-img2.png');				
+	background: url('img/rules.png');				
 	padding: none; 									
     
 }
@@ -297,7 +297,7 @@
 	top:50%;										
 	margin:-350px 0 0 -500px;    					
 	text-align: center;
-	background: url('img/bg-img3.png');				
+	background: url('img/cmds.png');				
 	padding: none; 									
     
 }
@@ -410,7 +410,7 @@
 	top:50%;										
 	margin:-350px 0 0 -500px;    					
 	text-align: center;
-	background: url('img/bg-img4.png');				
+	background: url('img/svrinfo.png');				
 	padding: none; 									
     
 }
